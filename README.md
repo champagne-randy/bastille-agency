@@ -31,7 +31,7 @@
 ```cd challenge```
 * install dependencies <br>
 ```npm install```
-* build es5 code
+* build es5-compliant code <br>
 ```npm build```
 
 
