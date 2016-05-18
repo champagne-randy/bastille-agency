@@ -1,26 +1,33 @@
 'use strict';
 
-export function saveUrl(userToken, URL) {
+function getDomain(URL) {
+	return '';
+}
+
+
+export function saveUrl(userToken, URL, data) {
 	return false;
 }
 
 
-export function getUrls(userToken) {
+export function getUrls(userToken, data) {
 	return null;
 }
 
 
-export function removeUrl(userToken, URL) {
+export function removeUrl(userToken, URL, data) {
 	return false;
 }
 
 
-export function getUsersByDomain(URL) {
+export function getUsersByDomain(URL, data) {
 	let domain = getDomain(URL);
 	return '';
 }
 
 
-function getDomain(URL) {
-	return '';
+export function getRecommendedUrls(userToken, URL, data) {
+	return [];
 }
+
+
