@@ -17,6 +17,7 @@
 
 * Behavior Driven Development (BDD) test pipeline powered by [mocha](https://mochajs.org/) and [chai](http://chaijs.com/)
 * ES6 transpiling pipeline powered by [babel](https://babeljs.io/)
+* Used [Collenctions.js](http://www.collectionsjs.com/) module which has several nifty functions
 
 
 
