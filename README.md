@@ -41,6 +41,8 @@ Description comming soon
 ```cd challenge```
 * install dependencies <br>
 ```npm install```
+* build es5 code
+```npm build```
 
 
 
