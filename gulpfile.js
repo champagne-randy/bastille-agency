@@ -1,20 +1,29 @@
 "use strict"
 
 // import necessary modules
-const gulp 	 = require('gulp');
-const babel  = require('gulp-babel');
-const source = require('vinyl-source-stream');
+const gulp 	  = require('gulp'),
+	  babel   = require('gulp-babel'),
+	  source  = require('vinyl-source-stream'),
+	  jshint  = require('gulp-jshint'),
+	  stylish = require('jshint-stylish');
 
 
 
-// ToDo:
-// define clean task
-// only clean files that were updated
+// jshint tasks
+gulp.task('jshint', function() {
+  return gulp.src('lib/**/*.js')
+             .pipe(jshint())
+             .pipe(jshint.reporter(stylish));
+});
+gulp.task('jshint:test', function() {
+  return gulp.src('test/**/*.js')
+             .pipe(jshint())
+             .pipe(jshint.reporter(stylish));
+});
 
 
 // build
-// ToDo: only process files that were updated
-gulp.task('build', () => {
+gulp.task('build', ['jshint'], () => {
 	return gulp.src('./lib/**/*.es6')
 				.pipe(babel({
 					presets: ['es2015']
@@ -23,22 +32,13 @@ gulp.task('build', () => {
 });
 
 
-// ToDo:
-// define test task
-// https://tanzimsaqib.wordpress.com/2015/06/06/continuous-functional-test-automation-with-gulp-mocha-request-cheerio-chai/
-
-
-// ToDo:
-// define browser-sync task
-
-
-// define watch task
-gulp.task('watch', ['build'], function () {
+// watch task
+gulp.task('watch', ['build','jshint:test'], function () {
     gulp.watch('./**/*.es6', ['build']);
 });
 
 
-// define default task
+// default task
 gulp.task('default', ['watch']);
 
 
