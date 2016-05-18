@@ -1,10 +1,10 @@
 ![mobble](http://cloud.scott.ee/images/mobble.png)
 
-# Workspace for Coursera's Data Structures and Algorithms Specialization
+# Workspace the Bastille Agency coding challenge
 
 * Status: ✔ Active
 * Contributors: [@randychampagne](http://twitter.com/randychampagne)
-* Description: This is the sandbox I use to complete coursework for this MOOC
+* Description: a coding challenge for a front-end developer position
 * Author: [Randy Champagne](http://www.randychampagne.com)
 * Author URI: [http://www.randychampagne.com](http://www.randychampagne.com)
 * License: GNU General Public License v3.0
@@ -16,7 +16,7 @@
 
 ## About
 
-This repo holds materials from Coursera's [Data Structures and Algorithms](https://www.coursera.org/specializations/data-structures-algorithms) specialization.
+Description comming soon
 
 
 
@@ -36,9 +36,9 @@ This repo holds materials from Coursera's [Data Structures and Algorithms](https
 ## Installation
 
 * clone this repository <br>
-```git clone "https://github.com/champagne-randy/coursera_algorithms.git" algorithms```
+```git clone "https://github.com/champagne-randy/bastille-agency.git" challenge```
 * change to project dir <br>
-```cd algorithms```
+```cd challenge```
 * install dependencies <br>
 ```npm install```
 
