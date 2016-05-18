@@ -2,7 +2,6 @@
 
 # Bastille Agency coding challenge
 
-* Status: ✔ Active
 * Contributors: [@randychampagne](http://twitter.com/randychampagne)
 * Description: a coding challenge for a front-end developer position
 * Author: [Randy Champagne](http://www.randychampagne.com)
