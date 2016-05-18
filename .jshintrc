@@ -1,3 +1,14 @@
 {
-    "esnext": true
+    "esnext": true,
+    "globals"   : {
+		/* MOCHA */
+		"require"	 : false,
+		"describe"   : false,
+		"it"         : false,
+		"before"     : false,
+		"beforeEach" : false,
+		"after"      : false,
+		"afterEach"  : false,
+		"context"    : false
+	}
 }
